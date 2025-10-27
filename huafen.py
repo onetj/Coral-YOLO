@@ -1,4 +1,3 @@
-
 import os
 import shutil
 import random
@@ -68,3 +67,4 @@ if __name__ == '__main__':
     new_file_path = r"D:/yolov12-main/yolov12-main/VOCdevkit"  # 新数据存放位置
 
     split_data(file_path, label_path, new_file_path, train_rate=0.8, val_rate=0.1, test_rate=0.1)
+
