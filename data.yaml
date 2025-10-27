@@ -1,0 +1,13 @@
+train: D:/yolov12-main/yolov12-main/VOCdevkit/train/images  # train images (relative to 'path') 128 images
+val: D:/yolov12-main/yolov12-main/VOCdevkit/val/images  # val images (relative to 'path') 128 images
+test: D:/yolov12-main/yolov12-main/VOCdevkit/test/images
+ 
+nc: 4
+ 
+# Classes
+names: ['Healthy','Bleached','Dead','Sub_healthy']
+
+
+#nc: 7
+# Classes
+#names: ['angular_leafspot','anthracnose_fruit_rot','blossom_blight','gray_mold','leaf_spot','powdery_mildew_fruit','powdery_mildew_leaf']

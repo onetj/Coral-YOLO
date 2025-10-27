@@ -1,0 +1,14 @@
+train: D:/yolov12-main/yolov12-main/Strawberry Disease.v1i.yolov11/train/images  # train images (relative to 'path') 128 images
+val: D:/yolov12-main/yolov12-main/Strawberry Disease.v1i.yolov11/valid/images  # val images (relative to 'path') 128 images
+test: D:/yolov12-main/yolov12-main/Strawberry Disease.v1i.yolov11/test/images
+
+nc: 7
+names: ['angular_leafspot', 'anthracnose_fruit_rot', 'blossom_blight', 'gray_mold', 'leaf_spot', 'powdery_mildew_fruit', 'powdery_mildew_leaf']
+
+# roboflow:
+#  workspace: tts-workspace
+#  project: strawberry-disease-u9xwk
+#  version: 1
+#  license: CC BY 4.0
+#  url: https://universe.roboflow.com/tts-workspace/strawberry-disease-u9xwk/dataset/1
+ 
