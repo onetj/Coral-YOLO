@@ -1,5 +1,4 @@
-# 作者：CSDN-笑脸惹桃花 https://blog.csdn.net/qq_67105081?type=blog
-# github:peng-xiaobai https://github.com/peng-xiaobai/Dataset-Conversion
+
 import os
 import shutil
 import random
@@ -67,4 +66,5 @@ if __name__ == '__main__':
     file_path = r"D:/yolov12-main/yolov12-main/data/JPEGImages"  # 图片文件夹
     label_path = r'D:/yolov12-main/yolov12-main/data/labels'  # 标签文件夹
     new_file_path = r"D:/yolov12-main/yolov12-main/VOCdevkit"  # 新数据存放位置
+
     split_data(file_path, label_path, new_file_path, train_rate=0.8, val_rate=0.1, test_rate=0.1)
