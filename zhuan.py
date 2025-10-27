@@ -1,6 +1,3 @@
-# 作者：CSDN-笑脸惹桃花 https://blog.csdn.net/qq_67105081?type=blog
-# github:peng-xiaobai https://github.com/peng-xiaobai/Dataset-Conversion
-
 import os
 import xml.etree.ElementTree as ET
 
@@ -10,8 +7,8 @@ category_to_index = {category: index for index, category in enumerate(categories
 
 
 # 定义输入文件夹和输出文件夹
-input_folder = r'D:\yolov12-main\yolov12-main\data\Annotations'  # 替换为实际的XML文件夹路径！！！
-output_folder = r'D:\yolov12-main\yolov12-main\data\labels'  # 替换为实际的输出TXT文件夹路径！！！
+input_folder = r'D:\yolov12-main\yolov12-main\data\Annotations'  # 替换为实际的XML文件夹路径
+output_folder = r'D:\yolov12-main\yolov12-main\data\labels'  # 替换为实际的输出TXT文件夹路径
 
 # 确保输出文件夹存在
 os.makedirs(output_folder, exist_ok=True)
@@ -63,4 +60,5 @@ for filename in os.listdir(input_folder):
         txt_path = os.path.join(output_folder, txt_filename)
         with open(txt_path, 'w') as f:
             for obj in objects:
+
                 f.write(obj + '\n')
