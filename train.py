@@ -17,10 +17,10 @@ def main():
     # 训练配置 - 显存优化参数
     results = model.train(
         data='data.yaml',
-        epochs=200,
+        epochs=300,
         patience=100,
-        batch=2,  # 减小批次大小
-        imgsz=512,  # 减小输入尺寸
+        batch=16,  
+        imgsz=512,  
         save=True,
         save_period=-1,
         device=0,
@@ -28,7 +28,7 @@ def main():
         project=None,
         name='train_fixed',
         exist_ok=False,
-        pretrained='yolov12n.pt',
+        pretrained='yolov12n.pt', #
         optimizer='SGD',
         verbose=True,
         seed=0,
@@ -38,7 +38,7 @@ def main():
         amp=True,
         fraction=1.0,
         lr0=0.001,  # 降低学习率
-        lrf=0.001,
+        lrf=0.01,
         momentum=0.937,
         weight_decay=0.0005,
         warmup_epochs=5.0,
@@ -78,4 +78,5 @@ if __name__ == '__main__':
         subprocess.run(["pip", "install", "seaborn"], check=True)
 
     # 运行主函数
+
     main()
